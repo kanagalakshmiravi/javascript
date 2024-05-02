@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inches_cal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <P>
+            <h2>CM into Inches</h2>
+        </P>
+        <input type="number" id="value">
+        <button id="btn" onclick=" calculate()">CLICK HERE</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        function calculate(){
+     const userval= Number(document.getElementById('value').value);
+     const values= userval/2.5;
+     const result= document.getElementById('result');
+     result.innerHTML= values
+    }
+   
+         </script>
+</body>
+</html>
